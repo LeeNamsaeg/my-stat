@@ -1,0 +1,117 @@
+.normal-text{
+	display: block;
+
+	margin: 0 0;
+
+	color: white;
+
+	text-align: center;
+
+	font-weight: 800;
+}
+.normal-text-link{
+	display: block;
+
+	margin: 0 0;
+
+	color: white;
+
+	text-align: center;
+
+	font-weight: 800;
+}
+
+.normal-button{
+	display: block;
+
+	border: 1px solid white;
+	border-radius: 5px;
+
+	margin: 0 auto;
+	margin-top: 15px;
+
+	color: rgb(200, 200, 200);
+	background-color: rgb(40, 40, 40);
+}
+.normal-button:hover{
+	color: rgb(150, 150, 150);
+
+	cursor: pointer;
+}
+
+.margin-bottom-30px{
+	margin-bottom: 30px;
+}
+.margin-bottom-15px{
+	margin-bottom: 15px;
+}
+
+body{
+	background-color: rgb(40, 40, 40);
+}
+
+a{
+	text-decoration-line: none;
+}
+
+.page-title{
+	display: block;
+
+	margin: 0 0;
+
+	color: white;
+
+	text-align: center;
+
+	font-size: 75px;
+	font-weight: 1000;
+}
+
+.stat-window-wrapper{
+	width: 750px;
+
+	padding: 30px 30px;
+
+	border: 3px solid white;
+	border-radius: 10px;
+
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.status-wrapper{
+	width: 250px;
+
+	padding: 15px 5px;
+
+	border: 3px solid white;
+	border-radius: 10px;
+
+	margin: 0 auto;
+}
+
+.dividing-line{
+	width: 500px;
+
+	border: 2px solid rgb(200, 200, 200);
+	border-radius: 15px;
+
+	margin: 30px auto;
+}
+
+#select-training-type{
+	display: block;
+
+	width: 150px;
+	height: 30px;
+
+	padding-left: 14px;
+
+	border-radius: 5px;
+
+	margin: 0 auto;	
+
+	background-color: rgb(151, 151, 151);
+
+	font-weight: 800;
+}

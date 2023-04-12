@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../static/css/index.css">
+
+	<title>스탯창</title>
+</head>
+<body>
+	<div class="content-wrapper">
+		<h1 class="page-title">STAT</h1>
+
+		<div class="stat-window-wrapper">
+			<a class="normal-text margin-bottom-30px">당신의 레벨 : LV</a>
+
+			<div class="status-wrapper">
+				<a class="normal-text-link margin-bottom-15px" href="/my-stat?stat=STR">근력 : LV</a>
+				<a class="normal-text-link" href="/my-stat?stat=INT">지능 : LV</a>
+			</div>
+
+			<div class="dividing-line"></div>
+
+			<div class="training-window-wrapper">
+				<form action="my-training" method="post">
+					<select name="select-training-type" id="select-training-type">
+						<optgroup label="STR">
+							<option value="운동">운동</option>
+						</optgroup>
+		
+						<optgroup label="INT">
+							<option value="공부">공부</option>
+						</optgroup>
+					</select>
+
+					<input class="normal-button" type="submit" value="훈련장으로">
+				</form>
+
+				<!-- 훈련장으로 리다이렉트하는 버튼
+				훈련장은 유저의 집중력에 방해가 되지 않게
+				하얀색 글자가 서서히 배경색과 같아지게 하기
+				30분마다 모든 글자의 색깔이 되돌아오며 확인 버튼이 화면의 랜덤 위치에 나타나게 하기 
+				1만 시간의 법칙을 따라서 1만 시간동안 한 일을 하면 달인으로 인정하기
+				-->
+			</div>
+		</div>
+	</dlv>
+</body>
+</html>
