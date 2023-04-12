@@ -1,0 +1,27 @@
+.login-wrapper{
+	width: 500px;
+	height: 600px;
+
+	padding: 50px 75px;
+
+	margin: 0 auto;
+
+	border: 1px solid #eee;
+}
+
+#id-input{
+	display: block;
+
+	width: 350px;
+	height: 25px;
+
+	margin-bottom: 15px;
+}
+#pw-input{
+	display: block;
+
+	width: 350px;
+	height: 25px;
+
+	margin-bottom: 15px;
+}
