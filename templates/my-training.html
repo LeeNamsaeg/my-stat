@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../static/css/my-training.css">
+
+	<title>훈련장 - {{ selected_training_type }}</title>
+</head>
+<body>
+	<div class="content-wrapper">
+		<h1 class="page-title">{{ selected_training_type }}</h1>
+
+		<div id="training-window-wrapper">
+			<input id="initial-training-verify-button" type="button">
+		</div>
+
+		<div id="training-result-wrapper">
+			<a class="normal-text-link margin-bottom-15px" id="acquired-exp-text"></a>
+
+			<input class="normal-button" id="retraining-button" type="button" value="재훈련">
+		</div>
+	</dlv>
+
+	<script type="text/javascript" src="../static/js/training-verify-button.js"></script>
+</body>
+</html>

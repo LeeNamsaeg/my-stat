@@ -1,0 +1,97 @@
+.normal-text{
+	display: block;
+
+	margin: 0 0;
+
+	color: white;
+
+	text-align: center;
+
+	font-weight: 800;
+}
+.normal-text-link{
+	display: block;
+
+	margin: 0 0;
+
+	color: white;
+
+	text-align: center;
+
+	font-weight: 800;
+}
+
+.normal-button{
+	display: block;
+
+	border: 1px solid white;
+	border-radius: 5px;
+
+	margin: 0 auto;
+	margin-top: 15px;
+
+	color: rgb(200, 200, 200);
+	background-color: rgb(40, 40, 40);
+}
+.normal-button:hover{
+	color: rgb(150, 150, 150);
+
+	cursor: pointer;
+}
+
+.margin-bottom-15px{
+	margin-bottom: 15px;
+}
+
+body{
+	background-color: rgb(40, 40, 40);
+}
+
+a{
+	text-decoration-line: none;
+}
+
+.page-title{
+	display: block;
+
+	margin: 0 0;
+	margin-bottom: 30px;
+
+	color: white;
+
+	text-align: center;
+
+	font-size: 75px;
+	font-weight: 1000;
+}
+
+#training-window-wrapper{
+	display: grid;
+
+	width: 550px;
+	height: 550px;
+
+	margin: 0 auto;
+
+	grid-template-rows: repeat(11, 50px);
+	grid-template-columns: repeat(11, 50px);
+}
+
+#initial-training-verify-button{
+	width: 50px;
+	height: 50px;
+
+	border: 0;
+	border-radius: 100px;
+
+	background-color: rgb(200, 200, 200);
+
+	grid-row-start: 6;
+	grid-row-end: 6;
+	grid-column-start: 6;
+	grid-column-end: 6;
+}
+
+#training-result-wrapper{
+	display: none;
+}
