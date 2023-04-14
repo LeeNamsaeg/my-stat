@@ -1,3 +1,11 @@
+body{
+	background-color: rgb(40, 40, 40);
+}
+
+a{
+	text-decoration-line: none;
+}
+
 .normal-text{
 	display: block;
 
@@ -43,12 +51,38 @@
 	margin-bottom: 15px;
 }
 
-body{
-	background-color: rgb(40, 40, 40);
+.color-black{
+	color: black;
 }
 
-a{
-	text-decoration-line: none;
+.nav-bar-wrapper{
+	width: 30%;
+
+	padding: 3px 30px;
+
+	border-radius: 5px;
+
+	margin: 0 auto;
+
+	background-color: rgb(200, 200, 200);
+
+	text-align: center;
+}
+
+.nav-bar{
+	display: block;
+
+	padding: 0 0;
+
+	margin: 0 auto;
+
+	list-style: none;
+}
+.nav-bar-element{
+	display: inline-block;
+
+	margin-left: 7px;
+	margin-right: 7px;
 }
 
 .page-title{

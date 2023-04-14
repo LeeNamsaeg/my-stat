@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/my-stat")
+@app.route("/my-profile")
 def my_str():
     stat = None
     stat = request.args.get("stat", "")
@@ -17,10 +17,8 @@ def my_str():
     labels = [1, 2, 3, 4, 5, 6, 7, 8]
     data = [1, 2, 3, 4, 5, 6, 7, 8]
 
-    return render_template("my-stat.html", **locals())
+    return render_template("my-profile.html", **locals())
 
-@app.route("/my-training", methods=["POST"])
+@app.route("/training")
 def my_training():
-    selected_training_type = request.form.get("select-training-type")
-
-    return render_template("my-training.html", **locals())
+    return render_template("training.html")

@@ -12,7 +12,11 @@
 <body>
 	<div class="content-wrapper">
 		<div class="nav-bar-wrapper">
-			
+			<ul class="nav-bar">
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/">홈</a></li>
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/training">훈련장</a></li>
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/my-profile">프로필</a></li>
+			</ul>
 		</div>
 
 		<h1 class="page-title">STAT</h1>
@@ -22,19 +26,14 @@
 
 			<div class="status-wrapper">
 				<a class="normal-text-link margin-bottom-15px" href="/my-stat?stat=STR">근력 : LV</a>
-				<a class="normal-text-link" href="/my-stat?stat=INT">지능 : LV</a>
+				<a class="normal-text-link margin-bottom-15px" href="/my-stat?stat=INT">지능 : LV</a>
 			</div>
 
 			<div class="dividing-line"></div>
 
 			<div class="training-window-wrapper">
 				<form action="my-training" method="post">
-					<select name="select-training-type" id="select-training-type">
-						<optgroup label="STR">
-							<option value="유산소">유산소</option>
-							<option value="무산소">무산소</option>
-						</optgroup>
-		
+					<select id="select-training-type" name="select-training-type" >
 						<optgroup label="INT">
 							<option value="국어">국어</option>
 							<option value="수학">수학</option>
@@ -42,6 +41,11 @@
 							<option value="과학">과학</option>
 							<option value="사회">사회</option>
 							<option value="역사">역사</option>
+						</optgroup>
+
+						<optgroup label="STR">
+							<option value="유산소">유산소</option>
+							<option value="무산소">무산소</option>
 						</optgroup>
 					</select>
 

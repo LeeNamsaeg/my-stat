@@ -29,33 +29,6 @@ a{
 	font-weight: 800;
 }
 
-.normal-button{
-	display: block;
-
-	padding: 5px 3px;
-
-	border: 1px solid white;
-	border-radius: 5px;
-
-	margin: 0 auto;
-	margin-top: 15px;
-
-	color: rgb(200, 200, 200);
-	background-color: rgb(40, 40, 40);
-}
-.normal-button:hover{
-	color: rgb(150, 150, 150);
-
-	cursor: pointer;
-}
-
-.margin-bottom-15px{
-	margin-bottom: 15px;
-}
-.margin-bottom-30px{
-	margin-bottom: 30px;
-}
-
 .color-black{
 	color: black;
 }
@@ -125,31 +98,7 @@ a{
 	margin-top: 50px;
 }
 
-.status-wrapper{
-	width: 30%;
-
-	padding: 15px 5px;
-
-	border: 3px solid white;
-	border-radius: 10px;
-
+#my-stat-history-canvas{
 	margin: 0 auto;
-}
-
-#select-training-type{
-	display: block;
-
-	width: 20%;
-
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 15px;
-
-	border-radius: 5px;
-
-	margin: 0 auto;	
-
-	background-color: rgb(151, 151, 151);
-
-	font-weight: 800;
+	margin-top: 30px;
 }

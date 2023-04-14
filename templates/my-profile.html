@@ -5,13 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="../static/css/my-stat.css">
+	<link rel="stylesheet" href="../static/css/my-profile.css">
 
-	<title>스탯창 - {{ stat }}</title>
+	<title>프로필</title>
 </head>
 <body>
 	<div class="content-wrapper">
-		<h1 class="page-title">{{ stat }}</h1>
+		<div class="nav-bar-wrapper">
+			<ul class="nav-bar">
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/">홈</a></li>
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/training">훈련장</a></li>
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/my-profile">프로필</a></li>
+			</ul>
+		</div>
+
+		<h1 class="page-title">PROFILE</h1>
 
 		<div class="stat-window-wrapper">
 			<p class="normal-text margin-bottom-30px">현재 당신의 {{ stat }} : </p>
