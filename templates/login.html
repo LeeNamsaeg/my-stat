@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="../static/css/login.css ">
 
     <title>로그인</title>
@@ -24,14 +26,18 @@
 
 		<div class="login-window-wrapper">
 			<form method="post" action="/login/submit">
-				<input type="text" class="normal-text-input" name="user-id" placeholder="ID">
-				<input type="password" class="normal-text-input" name="user-pw" placeholder="PW">
+				<input type="text" class="normal-text-input" id="user-id" name="user-id" placeholder="ID">
+				<input type="password" class="normal-text-input" id="user-pw" name="user-pw" placeholder="PW">
 
-				<input type="submit" class="normal-button" placeholder="제출">
+				<input type="button" class="normal-button" id="login-submit" value="제출">
 			</form>
+
+			<p class="warning-message-text margin-top-30px" id="warning-message"></p>
 
 			<a class="normal-text-link margin-top-30px" href="/signup">회원가입</a>
 		</div>
 	</dlv>
+
+	<script type="text/javascript" src="../static/js/login.js"></script>
 </body>
 </html>

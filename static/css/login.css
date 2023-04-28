@@ -28,6 +28,17 @@ a{
 
 	font-weight: 800;
 }
+.warning-message-text{
+	display: block;
+
+	margin: 0 0;
+
+	color: rgb(255, 55, 55);
+
+	text-align: center;
+
+	font-weight: 800;
+}
 
 .normal-button{
 	display: block;
