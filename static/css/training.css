@@ -1,0 +1,175 @@
+body{
+	background-color: rgb(40, 40, 40);
+}
+
+a{
+	text-decoration-line: none;
+}
+
+.normal-text{
+	display: block;
+
+	margin: 0 0;
+
+	color: white;
+
+	text-align: center;
+
+	font-size: auto;
+	font-weight: 800;
+}
+.normal-text-link{
+	display: block;
+
+	margin: 0 0;
+
+	color: white;
+
+	text-align: center;
+
+	font-size: auto;
+	font-weight: 800;
+}
+
+.normal-button{
+	display: block;
+
+	padding: 5px 10px;
+
+	border: 1px solid white;
+	border-radius: 5px;
+
+	margin: 0 auto;
+	margin-top: 15px;
+
+	color: rgb(200, 200, 200);
+	background-color: rgb(40, 40, 40);
+}
+.normal-button:hover{
+	color: rgb(150, 150, 150);
+
+	cursor: pointer;
+}
+
+.margin-bottom-15px{
+	margin-bottom: 15px;
+}
+
+.color-black{
+	color: black;
+}
+
+.nav-bar-wrapper{
+	width: 30%;
+
+	padding: 3px 30px;
+
+	border-radius: 5px;
+
+	margin: 0 auto;
+
+	background-color: rgb(200, 200, 200);
+
+	text-align: center;
+}
+@media screen and (max-width:400px){
+	.nav-bar-wrapper{
+		width: 70%;
+	}
+}
+
+.nav-bar{
+	display: block;
+
+	padding: 0 0;
+
+	margin: 0 auto;
+
+	list-style: none;
+}
+.nav-bar-element{
+	display: inline-block;
+
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+.page-title{
+	display: block;
+
+	margin: 0 0;
+	margin-bottom: 30px;
+
+	color: white;
+
+	text-align: center;
+
+	font-size: 75px;
+	font-weight: 1000;
+}
+@media screen and (max-width:400px){
+	.page-title{
+		font-size: 55px;
+	}
+}
+
+#select-training-type{
+	display: block;
+
+	width: 15%;
+
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 15px;
+
+	border-radius: 5px;
+
+	margin: 0 auto;	
+
+	background-color: rgb(151, 151, 151);
+
+	font-weight: 800;
+}
+@media screen and (max-width:400px){
+	#select-training-type{
+		width: 50%;
+	}
+}
+
+#training-window-wrapper{
+	display: none;
+}
+
+#training-grid{
+	display: grid;
+
+	margin: 0 auto;
+
+	grid-template-rows: repeat(11, 1fr);
+	grid-template-columns: repeat(11, 1fr);
+}
+
+#initial-training-verify-button{
+	width: 50px;
+	height: 50px;
+
+	border: 0;
+	border-radius: 100px;
+
+	background-color: rgb(200, 200, 200);
+
+	grid-row-start: 6;
+	grid-row-end: 6;
+	grid-column-start: 6;
+	grid-column-end: 6;
+}
+@media screen and (max-width:400px){
+	#initial-training-verify-button{
+		width: 40px;
+		height: 40px;
+	}
+}
+
+#training-result-wrapper{
+	display: none;
+}
