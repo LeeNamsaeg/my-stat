@@ -21,8 +21,30 @@
 
 		<h1 class="page-title">TRAINING</h1>
 
+		<div id="select-training-type-wrapper">
+			<select id="select-training-type" name="select-training-type" >
+				<optgroup label="INT">
+					<option value="국어">국어</option>
+					<option value="수학">수학</option>
+					<option value="영어">영어</option>
+					<option value="과학">과학</option>
+					<option value="사회">사회</option>
+					<option value="역사">역사</option>
+				</optgroup>
+
+				<optgroup label="STR">
+					<option value="유산소">유산소</option>
+					<option value="무산소">무산소</option>
+				</optgroup>
+			</select>
+
+			<input class="normal-button" id="select-training-button" type="submit" value="훈련">
+		</div>
+
 		<div id="training-window-wrapper">
-			<input id="initial-training-verify-button" type="button">
+			<div id="training-grid">
+				<input id="initial-training-verify-button" type="button">
+			</div>
 		</div>
 
 		<div id="training-result-wrapper">
@@ -32,6 +54,6 @@
 		</div>
 	</dlv>
 
-	<script type="text/javascript" src="../static/js/training-verify-button.js"></script>
+	<script type="text/javascript" src="../static/js/training.js"></script>
 </body>
 </html>

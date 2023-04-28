@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/training")
+def my_training():
+    return render_template("training.html")
+
 @app.route("/my-profile")
 def my_str():
     stat = None
@@ -18,7 +22,3 @@ def my_str():
     data = [1, 2, 3, 4, 5, 6, 7, 8]
 
     return render_template("my-profile.html", **locals())
-
-@app.route("/training")
-def my_training():
-    return render_template("training.html")

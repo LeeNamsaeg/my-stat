@@ -41,6 +41,11 @@ a{
 
 	margin: 30px auto;
 }
+@media screen and (max-width:400px){
+	.dividing-line{
+		width: 80%;
+	}
+}
 
 .nav-bar-wrapper{
 	width: 30%;
@@ -54,6 +59,11 @@ a{
 	background-color: rgb(200, 200, 200);
 
 	text-align: center;
+}
+@media screen and (max-width:400px){
+	.nav-bar-wrapper{
+		width: 70%;
+	}
 }
 
 .nav-bar{
@@ -85,6 +95,11 @@ a{
 	font-size: 75px;
 	font-weight: 1000;
 }
+@media screen and (max-width:400px){
+	.page-title{
+		font-size: 55px;
+	}
+}
 
 .stat-window-wrapper{
 	width: 50%;
@@ -96,6 +111,11 @@ a{
 
 	margin: 0 auto;
 	margin-top: 50px;
+}
+@media screen and (max-width:400px){
+	.stat-window-wrapper{
+		width: 70%;
+	}
 }
 
 #my-stat-history-canvas{

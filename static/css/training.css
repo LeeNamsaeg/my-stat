@@ -15,6 +15,7 @@ a{
 
 	text-align: center;
 
+	font-size: auto;
 	font-weight: 800;
 }
 .normal-text-link{
@@ -26,11 +27,14 @@ a{
 
 	text-align: center;
 
+	font-size: auto;
 	font-weight: 800;
 }
 
 .normal-button{
 	display: block;
+
+	padding: 5px 10px;
 
 	border: 1px solid white;
 	border-radius: 5px;
@@ -68,6 +72,11 @@ a{
 
 	text-align: center;
 }
+@media screen and (max-width:400px){
+	.nav-bar-wrapper{
+		width: 70%;
+	}
+}
 
 .nav-bar{
 	display: block;
@@ -98,17 +107,46 @@ a{
 	font-size: 75px;
 	font-weight: 1000;
 }
+@media screen and (max-width:400px){
+	.page-title{
+		font-size: 55px;
+	}
+}
+
+#select-training-type{
+	display: block;
+
+	width: 15%;
+
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 15px;
+
+	border-radius: 5px;
+
+	margin: 0 auto;	
+
+	background-color: rgb(151, 151, 151);
+
+	font-weight: 800;
+}
+@media screen and (max-width:400px){
+	#select-training-type{
+		width: 50%;
+	}
+}
 
 #training-window-wrapper{
-	display: grid;
+	display: none;
+}
 
-	width: 550px;
-	height: 550px;
+#training-grid{
+	display: grid;
 
 	margin: 0 auto;
 
-	grid-template-rows: repeat(11, 50px);
-	grid-template-columns: repeat(11, 50px);
+	grid-template-rows: repeat(11, 1fr);
+	grid-template-columns: repeat(11, 1fr);
 }
 
 #initial-training-verify-button{
@@ -124,6 +162,12 @@ a{
 	grid-row-end: 6;
 	grid-column-start: 6;
 	grid-column-end: 6;
+}
+@media screen and (max-width:400px){
+	#initial-training-verify-button{
+		width: 40px;
+		height: 40px;
+	}
 }
 
 #training-result-wrapper{
