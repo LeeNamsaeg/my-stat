@@ -16,41 +16,44 @@
 				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/">홈</a></li>
 				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/training">훈련장</a></li>
 				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/my-profile">프로필</a></li>
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/login">로그인</a></li>
 			</ul>
 		</div>
 
 		<h1 class="page-title">TRAINING</h1>
 
-		<div id="select-training-type-wrapper">
-			<select id="select-training-type" name="select-training-type" >
-				<optgroup label="INT">
-					<option value="국어">국어</option>
-					<option value="수학">수학</option>
-					<option value="영어">영어</option>
-					<option value="과학">과학</option>
-					<option value="사회">사회</option>
-					<option value="역사">역사</option>
-				</optgroup>
-
-				<optgroup label="STR">
-					<option value="유산소">유산소</option>
-					<option value="무산소">무산소</option>
-				</optgroup>
-			</select>
-
-			<input class="normal-button" id="select-training-button" type="submit" value="훈련">
-		</div>
-
-		<div id="training-window-wrapper">
-			<div id="training-grid">
-				<input id="initial-training-verify-button" type="button">
+		<div class="training-window-wrapper">
+			<div id="select-training-type-wrapper">
+				<select id="select-training-type" name="select-training-type" >
+					<optgroup label="INT">
+						<option value="국어">국어</option>
+						<option value="수학">수학</option>
+						<option value="영어">영어</option>
+						<option value="과학">과학</option>
+						<option value="사회">사회</option>
+						<option value="역사">역사</option>
+					</optgroup>
+	
+					<optgroup label="STR">
+						<option value="유산소">유산소</option>
+						<option value="무산소">무산소</option>
+					</optgroup>
+				</select>
+	
+				<input class="normal-button" id="select-training-type-button" type="submit" value="훈련">
 			</div>
-		</div>
-
-		<div id="training-result-wrapper">
-			<a class="normal-text-link margin-bottom-15px" id="acquired-exp-text"></a>
-
-			<input class="normal-button" id="retraining-button" type="button" value="재훈련">
+	
+			<div id="training-verify-window-wrapper">
+				<div id="training-verify-grid">
+					<input id="initial-training-verify-button" type="button">
+				</div>
+			</div>
+	
+			<div id="training-result-wrapper">
+				<a class="normal-text-link margin-bottom-15px" id="acquired-exp-text"></a>
+	
+				<input class="normal-button" id="retraining-button" type="button" value="재훈련">
+			</div>
 		</div>
 	</dlv>
 

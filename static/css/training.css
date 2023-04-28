@@ -113,10 +113,27 @@ a{
 	}
 }
 
+.training-window-wrapper{
+	width: 50%;
+
+	padding: 30px 30px;
+
+	border: 3px solid white;
+	border-radius: 10px;
+
+	margin: 0 auto;
+	margin-top: 50px;
+}
+@media screen and (max-width:400px){
+	.training-window-wrapper{
+		width: 70%;
+	}
+}
+
 #select-training-type{
 	display: block;
 
-	width: 15%;
+	width: 30%;
 
 	padding-top: 3px;
 	padding-bottom: 3px;
@@ -136,17 +153,26 @@ a{
 	}
 }
 
-#training-window-wrapper{
+#training-verify-window-wrapper{
 	display: none;
 }
 
-#training-grid{
+#training-verify-grid{
 	display: grid;
+
+	width: 550px;
+	height: 550px;
 
 	margin: 0 auto;
 
 	grid-template-rows: repeat(11, 1fr);
 	grid-template-columns: repeat(11, 1fr);
+}
+@media screen and (max-width:400px){
+	#training-verify-grid{
+		width: 270px;
+		height: 270px;
+	}
 }
 
 #initial-training-verify-button{
@@ -155,6 +181,8 @@ a{
 
 	border: 0;
 	border-radius: 100px;
+
+	margin: auto auto;
 
 	background-color: rgb(200, 200, 200);
 

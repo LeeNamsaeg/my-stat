@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/login.css ">
+
+    <title>로그인</title>
+</head>
+<body>
+    <div class="content-wrapper">
+		<div class="nav-bar-wrapper">
+			<ul class="nav-bar">
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/">홈</a></li>
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/training">훈련장</a></li>
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/my-profile">프로필</a></li>
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/login">로그인</a></li>
+			</ul>
+		</div>
+
+		<h1 class="page-title">LOGIN</h1>
+
+		<div class="login-window-wrapper">
+			<form method="post" action="/login/submit">
+				<input type="text" class="normal-text-input" name="user-id" placeholder="ID">
+				<input type="password" class="normal-text-input" name="user-pw" placeholder="PW">
+
+				<input type="submit" class="normal-button" placeholder="제출">
+			</form>
+
+			<a class="normal-text-link margin-top-30px" href="/signup">회원가입</a>
+		</div>
+	</dlv>
+</body>
+</html>

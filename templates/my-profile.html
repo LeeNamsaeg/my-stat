@@ -16,17 +16,21 @@
 				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/">홈</a></li>
 				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/training">훈련장</a></li>
 				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/my-profile">프로필</a></li>
+				<li class="nav-bar-element"><a class="normal-text-link color-black" href="/login">로그인</a></li>
 			</ul>
 		</div>
 
 		<h1 class="page-title">PROFILE</h1>
 
 		<div class="stat-window-wrapper">
-			<p class="normal-text margin-bottom-30px">현재 당신의 {{ stat }} : </p>
+			<p class="normal-text margin-bottom-30px">현재 당신의 레벨 : LV</p>
+
+			<div class="status-wrapper">
+				<p class="normal-text margin-bottom-15px">현재 당신의 : </p>
+			</div>
 
 			<div class="dividing-line"></div>
 
-			<p class="normal-text">당신의 지난 {{ stat }} : </p>
 			<canvas id="my-stat-history-canvas"></canvas>
 		</div>
 	</dlv>
