@@ -1,3 +1,5 @@
+/* css 좀 나중에 깔끔하게 딱 잘 관리하기 */
+
 body{
 	background-color: rgb(40, 40, 40);
 }
@@ -53,7 +55,7 @@ a{
 
 	text-align: center;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:700px){
 	.nav-bar-wrapper{
 		width: 70%;
 	}
@@ -88,7 +90,7 @@ a{
 	font-size: 75px;
 	font-weight: 1000;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:700px){
 	.page-title{
 		font-size: 55px;
 	}
@@ -105,8 +107,8 @@ a{
 	margin: 0 auto;
 	margin-top: 50px;
 }
-@media screen and (max-width:400px){
-	.stat-window-wrapper{
+@media screen and (max-width:700px){
+	.simple-stat-window-wrapper{
 		width: 70%;
 	}
 }
@@ -121,8 +123,8 @@ a{
 
 	margin: 0 auto;
 }
-@media screen and (max-width:400px){
-	.status-wrapper{
+@media screen and (max-width:700px){
+	.simple-status-wrapper{
 		width: 90%;
 	}
 }
