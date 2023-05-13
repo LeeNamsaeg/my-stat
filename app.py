@@ -2,17 +2,22 @@ from flask import Flask, render_template, request
 
 from backend.db import DbManager
 
+
 dbManager = DbManager()
 
+
 app = Flask(__name__)
+
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
+
 @app.route("/training")
 def training():
     return render_template("training.html")
+
 
 @app.route("/my-profile")
 def my_profile():
@@ -20,6 +25,7 @@ def my_profile():
     data = [1, 2, 3, 4, 5, 6, 7, 8]
 
     return render_template("my-profile.html", **locals())
+
 
 @app.route("/login")
 def login():
@@ -35,6 +41,7 @@ def login_submit():
         return db_manager_respond
 
     return "ok"
+
 
 @app.route("/signup")
 def signup():
