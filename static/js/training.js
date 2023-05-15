@@ -35,6 +35,8 @@ function createVerifyButton() {
 
     clearInterval(trainingVerifyTimer);
 
+    sendAcquiredExpsToServer();
+
     showTrainingResult();
 
     return;
@@ -46,6 +48,8 @@ function createVerifyButton() {
   trainingVerifyButton = document.createElement("input");
   trainingVerifyButton.type = "button";
 
+
+  // jquery 코드로 대체하기
   if (screen.width <= 400) {
     trainingVerifyButton.style.width = "40px";
     trainingVerifyButton.style.height = "40px";
@@ -77,6 +81,26 @@ function createVerifyButton() {
 
     trainingVerifyButton.remove();
   };
+}
+
+function sendAcquiredExpsToServer() {
+  $.ajax({
+    type : "post",
+    url : "/training/submit",
+    async : true,
+    headers : {
+      "Content-Type" : "application/json",
+      "X-HTTP-Method-Override" : "POST"
+    },
+    dataType : "text",
+    data : JSON.stringify(acquiredExps),
+    success : function(result) {
+        console.log(result);
+    },
+    error : function(request, status, error) {
+        console.log(error)
+    }
+  })
 }
 
 function showTrainingResult() {
