@@ -8,7 +8,7 @@ dbManager = DbManager()
 
 app = Flask(__name__)
 
-dbManager.get_user_stat_from_user_stat_table("tester1")
+dbManager.get_user_stat_from_user_stat_table_with_date("tester1")
 
 
 @app.route("/")
@@ -24,7 +24,8 @@ def training():
 def training_submit():
     params = request.get_json()
 
-    db_manager_response = dbManager.update_user_stat_table("tester1", list(params.values()))
+    # db_manager_response = dbManager.update_user_stat_table("tester1", list(params.values()))
+    dbManager.create_new_user_stat_table("tester1")
 
     return "ok"
 
@@ -46,6 +47,11 @@ def login_submit():
     params = request.get_json()
 
     db_manager_respond = dbManager.select_user_account_from_user_account_table_where_user_id_and_user_pw(params["user_id"], params["user_pw"])
+
+    if db_manager_respond != "ok":
+        return db_manager_respond
+    
+    db_manager_respond = dbManager.create_new_user_stat_table("tester1")
 
     if db_manager_respond != "ok":
         return db_manager_respond

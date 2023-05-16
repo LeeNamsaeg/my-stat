@@ -1,5 +1,7 @@
 import pymysql
 
+from datetime import datetime
+
 class DbManager:
     def __init__(self):
         self.conn = pymysql.connect(
@@ -12,12 +14,16 @@ class DbManager:
 
         self.cur = self.conn.cursor()
 
-    def init_new_user_stat_table(self, user_id):
+        self.date = int(f"{datetime.today().date().year}{datetime.today().date().month}{datetime.today().date().day}")
+
+    def create_new_user_stat_table(self, user_id):
         if user_id == "":
             return "invalid value issue"
         
         try:
-            self.cur.execute(f"insert into user_stat_table values ('{user_id}', {0}, {0}, {0}, {0}, {0}, {0});")
+            self.cur.execute(f"create table user_stat_table_for_{user_id} (date int(1) not null, language_intelligence int(1) not null, logical_intelligence int(1) not null, historical_intelligence int(1) not null, cardiopulmonary_endurance int(1) not null, muscular_strength int(1) not null, muscular_endurance int(1) not null, unique index(date));")
+
+            self.cur.execute(f"insert into user_stat_table_for_{user_id} values ({self.date}, {0}, {0}, {0}, {0}, {0}, {0});")
         
         except pymysql.Error as err:
             code, msg = err.args
@@ -29,8 +35,9 @@ class DbManager:
 
         return "ok"
     
-    def get_user_stat_from_user_stat_table(self, user_id):
-        selection_result = self.cur.execute(f"select * from user_stat_table where user_id = '{user_id}';")    
+    def get_user_stat_from_user_stat_table_with_date(self, user_id):
+        selection_result = self.cur.execute(f"select * from user_stat_table_for_{user_id} where date={self.date};")
+        # 오류 나면 새 row 만들기
         
         row_value = self.cur.fetchall()
 
