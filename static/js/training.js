@@ -21,6 +21,9 @@ let acquiredExps = {
   "근지구력" : 0,
 };
 
+let userId = document.getElementById("user-id").innerText;
+// 이렇게 하면 안됨
+
 function initVariables() {
   isTrainingVerified = true;
 
@@ -93,7 +96,10 @@ function sendAcquiredExpsToServer() {
       "X-HTTP-Method-Override" : "POST"
     },
     dataType : "text",
-    data : JSON.stringify(acquiredExps),
+    data : JSON.stringify({
+      userId: userId,
+      exp: acquiredExps,
+    }),
     success : function(result) {
         console.log(result);
     },

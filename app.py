@@ -8,7 +8,7 @@ dbManager = DbManager()
 
 app = Flask(__name__)
 
-dbManager.get_user_stat_from_user_stat_table_with_date("tester1")
+user_id = "null"
 
 
 @app.route("/")
@@ -18,14 +18,15 @@ def index():
 
 @app.route("/training")
 def training():
-    return render_template("training.html")
+    local_user_id = user_id
+
+    return render_template("training.html", **locals())
 
 @app.route("/training/submit", methods=["POST"])
 def training_submit():
     params = request.get_json()
 
-    # db_manager_response = dbManager.update_user_stat_table("tester1", list(params.values()))
-    dbManager.create_new_user_stat_table("tester1")
+    db_manager_response = dbManager.update_user_stat_table(params["userId"], list(params["exp"].values()))
 
     return "ok"
 
@@ -46,12 +47,9 @@ def login():
 def login_submit():
     params = request.get_json()
 
-    db_manager_respond = dbManager.select_user_account_from_user_account_table_where_user_id_and_user_pw(params["user_id"], params["user_pw"])
+    user_id = params["user_id"]
 
-    if db_manager_respond != "ok":
-        return db_manager_respond
-    
-    db_manager_respond = dbManager.create_new_user_stat_table("tester1")
+    db_manager_respond = dbManager.select_user_account_from_user_account_table_where_user_id_and_user_pw(params["user_id"], params["user_pw"])
 
     if db_manager_respond != "ok":
         return db_manager_respond
@@ -72,7 +70,7 @@ def signup_submit():
     if db_manager_respond != "ok":
         return db_manager_respond
     
-    db_manager_respond = dbManager.init_new_user_stat_table(params["user_id"])
+    db_manager_respond = dbManager.create_new_user_stat_table(params["user_id"])
 
     if db_manager_respond != "ok":
         return db_manager_respond

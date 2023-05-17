@@ -49,9 +49,6 @@ document.getElementById("login-submit").onclick = function () {
       }
 
       document.getElementById("warning-message").innerText = "";
-
-      window.location.href =
-        "https://www.youtube.com/watch?v=qlAJwvv0ArI&ab_channel=Sou";
     },
     error: function (request, status, error) {
       console.log(error);

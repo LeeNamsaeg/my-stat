@@ -53,7 +53,6 @@ class DbManager:
 
         self.cur.execute(f"update user_stat_table set language_intelligence={final_row_value[0]}, logical_intelligence={final_row_value[1]}, historical_intelligence={final_row_value[2]}, cardiopulmonary_endurance={final_row_value[3]}, muscular_strength={final_row_value[4]}, muscular_endurance={final_row_value[5]};")
         # 유저마다 테이블 만들어서 관리하기
-        # git test
 
         self.conn.commit()
 
